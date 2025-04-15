@@ -1,0 +1,42 @@
+SPUYO7B1CZft3J4i
+
+raness807
+
+mongodb+srv://raness807:SPUYO7B1CZft3J4i@cluster0.frzuumy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+
+
+
+PUshing project on git hub  
+
+git init
+git status
+create .gitignore file
+git status
+git add .
+git status
+git commit -m "Add iniatial files"
+git status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
