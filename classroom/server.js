@@ -43,7 +43,7 @@ app.get("/register",(req,res)=>{
  
 app.get("/hello",(req,res)=>{
     // res.render("page.ejs",{name:req.session.name,msg:req.flash("success")});
-    // res.locals.msgs = req.flash("success");
+    res.locals.msgs = req.flash("success");
     // res.locals.error = req.flash("error");
 
     res.render("page.ejs",{name:req.session.name });
@@ -87,7 +87,7 @@ app.get("/hello",(req,res)=>{
        
 // });
 
-// app.get("/greet",(req,res)=>{
+// app.get("/greet",(req,res)=>{ 
 //     let {name='Raja'} = req.cookies;
 //     // console.log(req.cookies);
 //     console.log(req.signedCookies);

@@ -1,4 +1,8 @@
 <% layout("/layouts/boilerplate") %>
+
+<script>
+    const mapToken = "<%=  process.env.MAP_TOKEN   %>";
+</script>
 <div class="row mt-3">
     <div class="col-8 offset-2">
 
@@ -39,8 +43,8 @@
   
    
    <div class="col-8 offset-3 mb-3">
-       <hr>
        <% if(currUser){ %>
+        <hr>
                 <h4>Leave a Review</h4>
                 <form action="/listings/<%=singlelist._id %>/reviews" method="POST" novalidate class="needs-validation">
                     <div class="mb-3  mt-3">
@@ -82,6 +86,9 @@
                 
             <% } %>
         
+
+            <% if(singlelist.reviews.length === 0){ %>
+                <h4 class="text-center">No reviews yet</h4>
         <h4>All Reviews</h4>
        
 
@@ -103,14 +110,16 @@
             </form>
         </div>
 
-            <%  } %>
     </div>
-    <div class="map" class="col-8 offset-3 mb-3" >
-        <iframe src="https://api.maptiler.com/maps/basic-v2/?key=a0QNnHAGGnkFzssrGCYy#-0.2/0.00000/46.89785" frameborder="0" width="800px" height="600px "></iframe>
-    </div>
+    <%  } %>
     
-
 </div>
+<% }%>
+<div class="map" class="col-8 offset-3 mb-3" >
+    <iframe src="https://api.maptiler.com/maps/basic-v2/?key=a0QNnHAGGnkFzssrGCYy#-0.2/0.00000/46.89785" frameborder="0" width="800px" height="600px "></iframe>
+</div>
+
 <br>
 
 
+ 

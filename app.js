@@ -135,7 +135,7 @@ app.use((req,res,next)=>{
 
 
 
-// })
+// })   
 
 
 
@@ -216,7 +216,7 @@ app.use((req,res,next)=>{
 //     // let listing = req.body.listing;
 
 //     // new Listing(listing);
-    
+     
     
 //         // if(!req.body.listing){
 //         //     throw  new ExpressError(404,"Error ji")
@@ -270,6 +270,13 @@ app.use((req,res,next)=>{
 
 
 // });
+
+
+
+
+
+
+
 
 // app.get("/listings/:id/edit", validatelisting, wrapAsync(async(req,res)=>{
 //     let {id} = req.params;
@@ -338,6 +345,8 @@ app.use("/",usersRouter);
 
 // }));
 
+
+
 // //Delete review route
 
 // app.delete("/listings/:id/reviews/:reviewId",wrapAsync(async(req,res)=>{
@@ -348,6 +357,10 @@ app.use("/",usersRouter);
 //     res.redirect(`/listings/${id}`);
 
 // }));
+
+
+
+
 
 // app.all("*",(err,req,res,next)=>{
 //     next( ExpressError(404, "Page Not Found!"));
@@ -370,6 +383,6 @@ app.use((err,req,res,next)=>{
 
 
 app.listen(8080,()=>{
-    console.log("running");
+    console.log("running now this is it");
 
 })

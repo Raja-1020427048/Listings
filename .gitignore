@@ -1,5 +1,6 @@
 .env
 node_modules/
+ssh-keygen -t rsa -b 4096 -C "rmd241104@gmail.com"
 
 
 

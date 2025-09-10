@@ -26,3 +26,15 @@ module.exports.signup = async(req,res)=>{
 
     }
 }
+module.exports.loginForm = (req,res)=>{
+    res.render("users/login.ejs");
+}
+
+
+module.exports.renderLogin = (req,res)=>{
+    req.flash("Success", "welcome back to Wonderlust");
+    let redirectUrl = res.locals.redirectUrl || "/listings";
+    res.redirect(redirectUrl)
+
+};
+
